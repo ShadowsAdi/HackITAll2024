@@ -14,7 +14,7 @@ OLLAMA_URL = "192.168.100.1"
 #load the LLM
 def load_llm():
     llm = Ollama(
-    base_url="http:// + OLLAMA_URL + ":11434",
+    base_url="http://" + OLLAMA_URL + ":11434",
     model="mistral",
     verbose=True,
     callback_manager=CallbackManager([StreamingStdOutCallbackHandler()]),
